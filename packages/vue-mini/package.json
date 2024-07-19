@@ -1,0 +1,7 @@
+{
+  "name": "@virtual-view/vue-mini",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "virtual view core",
+  "license": "MIT"
+}

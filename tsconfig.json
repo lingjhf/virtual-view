@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "strictNullChecks": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "noEmit": true,
+    "isolatedModules": true,
+    "skipDefaultLibCheck": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "verbatimModuleSyntax": true,
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "paths": {
+      "@virtual-view/core": [
+        "./packages/core/src/index.ts"
+      ],
+      "@virtual-view/vue": [
+        "./packages/vue/src/index.ts"
+      ],
+      "@virtual-view/solid": [
+        "./packages/solid/src/index.ts"
+      ],
+    },
+  },
+}

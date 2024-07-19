@@ -1,0 +1,25 @@
+{
+  "name": "@virtual-view/eslint-config",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "eslint config preset",
+  "license": "MIT",
+  "main": "src/index.js",
+  "exports": {
+    ".": {
+      "default": "./src/index.js"
+    }
+  },
+  "devDependencies": {
+    "@stylistic/eslint-plugin": "^2.3.0",
+    "@stylistic/eslint-plugin-ts": "^2.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.15.0",
+    "@typescript-eslint/parser": "^7.15.0",
+    "eslint": "^9.6.0",
+    "eslint-plugin-jsonc": "^2.16.0",
+    "eslint-plugin-vue": "^9.27.0",
+    "jsonc-eslint-parser": "^2.4.0",
+    "typescript": "^5.5.3",
+    "typescript-eslint": "^7.15.0"
+  }
+}

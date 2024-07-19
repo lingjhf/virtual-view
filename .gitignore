@@ -1,0 +1,7 @@
+node_modules
+dist
+
+.eslintcache
+
+.nx/cache
+.nx/workspace-data

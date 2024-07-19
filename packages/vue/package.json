@@ -1,0 +1,10 @@
+{
+  "name": "@virtual-view/vue",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "virtual view core",
+  "license": "MIT",
+  "dependencies": {
+    "vue": "^3.4.29"
+  }
+}

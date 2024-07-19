@@ -1,0 +1,30 @@
+{
+  "name": "@virtual-view/monorepo",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "virtual view",
+  "license": "MIT",
+  "dependencies": {
+    "@virtual-view/core": "workspace:*",
+    "@virtual-view/eslint-config": "workspace:*",
+    "@virtual-view/solid": "workspace:*",
+    "@virtual-view/vue": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.5",
+    "eslint": "^9.6.0",
+    "nx": "19.3.0",
+    "simple-git-hooks": "^2.11.1",
+    "typescript": "^5.5.3",
+    "unocss": "^0.61.5",
+    "vitest": "^1.6.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts,tsx,vue}": [
+      "eslint . --cache"
+    ]
+  }
+}
