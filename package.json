@@ -4,6 +4,10 @@
   "version": "0.0.1",
   "description": "virtual view",
   "license": "MIT",
+  "scripts": {
+    "doc": "nx run @virtual-view/docs:docs:dev",
+    "play": "nx run @virtual-view/playground:dev"
+  },
   "dependencies": {
     "@virtual-view/core": "workspace:*",
     "@virtual-view/eslint-config": "workspace:*",
@@ -11,6 +15,7 @@
     "@virtual-view/vue": "workspace:*"
   },
   "devDependencies": {
+    "@eslint/compat": "^1.1.1",
     "@types/node": "^20.14.5",
     "eslint": "^9.6.0",
     "nx": "19.3.0",
