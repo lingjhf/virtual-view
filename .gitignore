@@ -7,3 +7,6 @@ dist
 .nx/workspace-data
 
 **/.vitepress/cache
+
+# Local Netlify folder
+.netlify
