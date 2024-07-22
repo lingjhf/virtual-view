@@ -26,7 +26,7 @@ export class VirtualList {
   constructor(options: VirtualListOptions) {
     this.setScrollTop(options.scrollTop ?? 0)
     this.setViewHeight(options.viewHeight)
-    this.setBuffer(options.buffer ?? 0)
+    this.setBuffer(options.buffer ?? 10)
     this.setItems(options.items)
     this._change = options?.change
   }

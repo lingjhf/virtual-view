@@ -1,2 +1,2 @@
 export * from './virtual-list.type'
-export { default as VirtualList } from './virtual-list.vue'
+export { default as VirtualList } from './VirtualList.vue'

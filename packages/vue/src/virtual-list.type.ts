@@ -1,5 +1,10 @@
 import type { VirtualListItem } from '@virtual-view/core'
 
+export type VirtualListDirection = 'vertical' | 'horizontal'
+
 export interface VirtualListProps {
-  items: VirtualListItem[],
+  direction?: VirtualListDirection,
+  items?: VirtualListItem[],
+  buffer?: number,
+  height?: number,
 }
