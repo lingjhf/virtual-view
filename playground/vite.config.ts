@@ -7,10 +7,19 @@ import Components from 'unplugin-vue-components/vite'
 import { PrimeVueResolver } from '@primevue/auto-import-resolver'
 import { alias } from '../alias'
 
+import solidPlugin from 'vite-plugin-solid'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
-    vue(),
+    vue({
+      template: {
+        compilerOptions: {
+          // treat all tags with a dash as custom elements
+          isCustomElement: tag => tag.includes('-'),
+        },
+      },
+    }),
+    solidPlugin(),
     vueDevTools(),
     UnoCSS(),
     Components({

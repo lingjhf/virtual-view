@@ -13,6 +13,7 @@
     "skipLibCheck": true,
     "resolveJsonModule": true,
     "verbatimModuleSyntax": true,
+    "jsx": "preserve",
     "lib": [
       "ES2020",
       "DOM",
