@@ -1,0 +1,34 @@
+{
+  "name": "@virtual-view/components",
+  "type": "module",
+  "version": "0.0.1",
+  "description": "virtual view core",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "exports": {
+    ".": {
+      "types": "./types.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./types": {
+      "types": "./types.d.ts"
+    }
+  },
+  "scripts": {
+    "watch": "parcel watch",
+    "build": "rollup -c"
+  },
+  "dependencies": {
+    "solid-element": "^1.8.1",
+    "solid-js": "^1.8.11"
+  },
+  "devDependencies": {
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "babel-preset-solid": "^1.8.19",
+    "rollup": "^4.19.0",
+    "rollup-plugin-dts": "^6.1.1"
+  }
+}

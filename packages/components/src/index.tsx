@@ -1,6 +1,5 @@
 import { createSignal } from 'solid-js'
 import { customElement } from 'solid-element'
-import '@virtual-view/components'
 
 const style = `div * {
           font-size: 200%;
@@ -29,7 +28,6 @@ customElement('my-counter', { someProp: 'one', otherProp: 'two' }, () => {
       <button onClick={() => setCount(count() - 1)}>-</button>
       <span>{count()}</span>
       <button onClick={() => setCount(count() + 1)}>+</button>
-      <my-counter></my-counter>
     </div>
   )
 })

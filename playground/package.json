@@ -12,7 +12,8 @@
   },
   "dependencies": {
     "primevue": "^4.0.0",
-    "vue": "^3.4.29"
+    "vue": "^3.4.29",
+    "@virtual-view/components": "workspace:*"
   },
   "devDependencies": {
     "@primevue/auto-import-resolver": "^4.0.0",

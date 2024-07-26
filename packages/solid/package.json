@@ -6,6 +6,10 @@
   "license": "MIT",
   "dependencies": {
     "solid-element": "^1.8.1",
-    "solid-js": "^1.8.11"
+    "solid-js": "^1.8.11",
+    "@virtual-view/components": "workspace:*"
+  },
+  "devDependencies": {
+    "vite": "^5.3.1"
   }
 }

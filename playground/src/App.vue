@@ -9,19 +9,14 @@
         {{ index }}
       </template>
     </VirtualList>
-    <my-counter />
+    <Counter />
   </div>
 </template>
 
 <script setup lang="ts">
 import { VirtualList } from '@virtual-view/vue'
-import '@virtual-view/solid'
-const items = Array.from({ length: 1000 }, (_, k) => ({ height: 100 }))
+import '@virtual-view/components/vue'
 
-declare global {
-  interface HTMLElementTagNameMap {
-    'my-counter': { someProp: 'one', otherProp: 'two', },
-  }
-}
+const items = Array.from({ length: 1000 }, (_, k) => ({ height: 100 }))
 
 </script>
