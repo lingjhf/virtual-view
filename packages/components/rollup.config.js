@@ -11,7 +11,7 @@ export default defineConfig([
       typescript({ tsconfig: './tsconfig.json' }),
     ],
     input: 'src/index.tsx',
-    external: ['solid-js', 'solid-js/web', 'solid-element'],
+    external: ['solid-js', 'solid-js/web', 'solid-element', '@virtual-view/core'],
     output: {
       dir: 'dist',
       format: 'esm',

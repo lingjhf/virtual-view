@@ -1,3 +1,4 @@
+import { Container } from './container'
 import { Frame } from './frame'
 import { FrameAlign } from './align'
 
@@ -24,7 +25,7 @@ export class Column extends Flex {
     return this
   }
 
-  add(child: Frame): this {
+  add(child: Container): this {
     const len = this._children.length
     this._addWithEvents(child, { resize: this._watchChildResize(child) })
     if (this._children.length > len) {
@@ -38,7 +39,7 @@ export class Column extends Flex {
     return this
   }
 
-  remove(child: Frame): number {
+  remove(child: Container): number {
     const index = super.remove(child)
     if (index > -1) {
       if (this._children.length === 0) {
@@ -176,7 +177,7 @@ export class Column extends Flex {
     return (this.height - this.padding.top - this.padding.bottom) / 2 + this.padding.top
   }
 
-  private _watchChildResize(child: Frame) {
+  private _watchChildResize(child: Container) {
     let height = child.height
     return () => {
       this._childrenHeight -= height
@@ -196,7 +197,7 @@ export class Row extends Flex {
     return this
   }
 
-  add(child: Frame): this {
+  add(child: Container): this {
     const len = this._children.length
     this._addWithEvents(child, { resize: this._watchChildResize(child) })
     if (this._children.length > len) {
@@ -210,7 +211,7 @@ export class Row extends Flex {
     return this
   }
 
-  remove(child: Frame): number {
+  remove(child: Container): number {
     const index = super.remove(child)
     if (index > -1) {
       if (this._children.length === 0) {
@@ -351,7 +352,7 @@ export class Row extends Flex {
     return (this.height - this.padding.top - this.padding.bottom) / 2 + this.padding.top
   }
 
-  private _watchChildResize(child: Frame) {
+  private _watchChildResize(child: Container) {
     let width = child.width
     return () => {
       this._childrenWidth -= width

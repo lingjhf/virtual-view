@@ -1,6 +1,6 @@
 import { createSignal } from 'solid-js'
 import { customElement } from 'solid-element'
-import '@virtual-view/components'
+import { Column } from '@virtual-view/core'
 
 const style = `div * {
           font-size: 200%;
@@ -21,15 +21,15 @@ const style = `div * {
           color: white;
         }`
 
-customElement('my-counter', { someProp: 'one', otherProp: 'two' }, () => {
+customElement('auto-layout', { }, () => {
   const [count, setCount] = createSignal(0)
+  const column = new Column({ width: 200, height: 100 })
   return (
     <div>
       <style>{style}</style>
       <button onClick={() => setCount(count() - 1)}>-</button>
       <span>{count()}</span>
       <button onClick={() => setCount(count() + 1)}>+</button>
-      <my-counter></my-counter>
     </div>
   )
 })
