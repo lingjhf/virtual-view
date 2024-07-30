@@ -16,5 +16,12 @@
   "types": "dist/index.d.ts",
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "eventemitter3": "^5.0.1",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/uuid": "^10.0.0"
+  }
 }
