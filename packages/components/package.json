@@ -17,7 +17,6 @@
     }
   },
   "scripts": {
-    "watch": "parcel watch",
     "build": "rollup -c"
   },
   "dependencies": {
