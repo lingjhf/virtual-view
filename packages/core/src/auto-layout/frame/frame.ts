@@ -1,6 +1,6 @@
 import { Padding } from './padding'
-import { FrameAlign } from './align'
-import { Container, type ContainerOptions } from './container'
+import { FrameAlign } from '../constants'
+import { Container, type ContainerOptions } from '../base/container'
 
 export interface FrameOptions extends ContainerOptions {
   align?: FrameAlign,
